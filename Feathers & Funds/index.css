@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+:root{
+  --fonte-principal: 'Roboto', sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+body{
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,47,121,1) 44%, rgb(0, 170, 255) 100%);
+}
+
+.light{
+  background: linear-gradient(90deg, #71daff 0%, #00a5e5 35%, #e4fdff 100%, #e6f4f1 20%);
+}
+
+.section-logo{
+  display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+.logo{
+  width: 80vh;
+  margin-left: 9vh;
+}
+.mind{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.de-para{
+  font-size: 2.4vh;
+  font-weight: bold;
+  font-family: var(--fonte-principal);
+}
+.mindd{
+  display: flex;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh;
+  padding-top: 0;
+  padding-bottom: 1.5vh;
+  margin-top: 6vh;
+}
+.text, .text1{
+  font-family: var(--fonte-principal);
+}
+.selections {
+  display: flex;
+  background-color: white;
+  width: 140vh;
+  height: 40vh;
+  flex-direction: column;
+  border-radius: 2vh;
+  border: 0.1vh solid rgb(153, 151, 151);
+  box-shadow: 1vh 1vh 1vh rgb(44, 44, 43);
+}
+.results{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 2vh;
+  padding-top: 0vh;
+  height: 8vh;
+  margin-top: 5vh;
+  margin-left: 5vh;
+  font-family: var(--fonte-principal);
+}
+.convers{
+  width: 17vh;
+  height: 5vh;
+  border: 1vh;
+  border-radius: 1vh;
+  background: #2244df;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+  margin-right: 6vh;
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+}
+
+.convers:hover{
+  background: #041689;
+}
+.trade{
+  width: 5vh;
+  height: 5vh;
+  border-radius: 100%;
+  background-color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-top: 3vh;
+}
+
+.trade:hover{
+  background-color: whitesmoke;
+}
+.entrada{
+  width: 35vh;
+  height: 8vh;
+  border-radius: 1vh;
+  border: 0.1vh solid rgb(153, 151, 151);
+  box-shadow: 0.2vh 0.2vh rgb(207, 207, 206);
+  padding-left: 2vh;
+  font-size: 2.5vh;
+}
+.saida{
+  margin-left: 4vh;
+  color: black;
+  font-size: 3vh;
+  font-weight: bold;
+}
+.saida1{
+  margin-left: 4vh;
+  color: rgb(51, 51, 51);
+  font-size: 1.9vh;
+  font-weight: bold;
+}
+.saida2{
+  margin-left: 4vh;
+  color: rgb(51, 51, 51);
+  font-size: 1.9vh;
+  font-weight: bold;
+}
+
+.saida3{
+  margin-left: 4vh;
+  color: rgb(51, 134, 18);
+  font-size: 1.9vh;
+  font-weight: bold;
+}
+
+/*Lista 1*/
+.custom-select {
+  width: 35vh;
+  position: relative;
+}
+
+.custom-select-options {
+  height: 18vh;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0vh;
+  width: 35vh;
+  display: none;
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  border-radius: 1vh;
+  font-weight: bold;
+}
+
+.custom-select-option {
+  padding: 0.5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-select-option:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.custom-select-toggle {
+  width: 35vh;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1vh;
+  border: 0.1vh solid rgb(153, 151, 151);
+  box-shadow: 0.2vh 0.2vh rgb(207, 207, 206);
+  font-weight: bold;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.custom-select-toggle img {
+  width: 3vh;
+  margin-left: 0.5vh;
+  margin-right: 0.7vh;
+}
+.custom-select-option img{
+  width: 3vh;
+  margin-left: 0.5vh;
+  margin-right: 0.7vh;
+}
+/*Lista 2*/
+.custom-select1 {
+  width: 35vh;
+  position: relative;
+}
+
+.custom-select-options1 {
+  height: 18vh;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0vh;
+  width: 35vh;
+  display: none;
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  border-radius: 1vh;
+  font-weight: bold;
+}
+
+.custom-select-option1 {
+  padding: 0.5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-select-option1:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.custom-select-toggle1 {
+  width: 35vh;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 1vh;
+  border: 0.1vh solid rgb(153, 151, 151);
+  box-shadow: 0.2vh 0.2vh rgb(207, 207, 206);
+  font-weight: bold;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.custom-select-toggle1 img {
+  width: 3vh;
+  margin-left: 0.5vh;
+  margin-right: 0.7vh;
+}
+.custom-select-option1 img{
+  width: 3vh;
+  margin-left: 0.5vh;
+  margin-right: 0.7vh;
+}
+
+/* Botões */
+
+.header{
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 4vh;
+  gap: 2vh;
+  position: relative;
+}
+/*Botao cor*/
+.menu-botoes{
+  background-color: white;
+  display: flex;
+  padding: 1vw;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.menu-botoes:hover {
+  background-color: #7393b3;
+}
+.menu-conteudo-idioma{
+  max-height: 10vh;
+  padding: 0.8vh;
+  width: 16vh;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  border-radius: 1vh;
+  font-weight: bold;
+  justify-content: center;
+  top: 100%;
+  
+}
+.menu-conteudo-idioma img{
+  margin-right: 1.5vh;
+
+}
+
+.menu-idioma{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.imagens{
+  display: flex;
+  flex-direction: column;
+} 
+
+.brasil, .USA{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trad{
+  color: black;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 2vh;
+}
+
+.brasil img, .USA img{
+  width: 4vh;
+  height: 4vh;
+}
+.brasil:hover, .USA:hover{
+  background-color: #b5c7da;
+}
+
+
